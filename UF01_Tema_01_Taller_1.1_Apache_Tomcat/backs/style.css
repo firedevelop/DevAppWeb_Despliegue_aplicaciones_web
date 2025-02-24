@@ -1,0 +1,93 @@
+/* Estilos personalizados */
+
+/* Fondo de la página */
+body {
+    background-color: #f0f8ff; /* Un color suave */
+}
+
+/* Ajustes generales de tipografía */
+h1, h2 {
+    color: #333; /* Color oscuro para los títulos */
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 40px 0 20px;
+    font-size: 2rem;
+}
+
+/* Estilos para la imagen del grupo */
+.group-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Estilos para las tarjetas usando Bulma */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjetas mejoradas con Bulma */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    border: 2px solid #ccc; /* Borde añadido */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Título de cada integrante */
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Enlace a las páginas personales */
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos responsivos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
